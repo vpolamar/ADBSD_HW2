@@ -55,12 +55,7 @@ def get_task2_list():
 @post('/task2/add/')
 def post_task2_add():
     description = request.forms.get("description")
-    quantity = request.forms.get("quantity")
-    try:
-        quantity = int(quantity)
-    except:
-        quantity = 1
-    add_task2_item(description, quantity)
+    add_task2_item(description)
     redirect('/task2/list/')
 
 @route("/task2/delete/<id>")
