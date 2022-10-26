@@ -28,6 +28,5 @@
   <p>Add new item: <input name="description"/></p>
   <p><button type="submit">Submit</button></p>
 </form>
-<
 </body>
 </html>
